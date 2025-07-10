@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apply Now - RK Abroad Jobs</title>
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #dae2f8, #d6a4a4);
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 720px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #002c70;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      color: #d40000;
+    }
+    .address {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      background-color: #d40000;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #a60000;
+    }
+    .badge {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      background-color: #ffeeba;
+      color: #212529;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    button, .job-role {
+        font-size: 2rem !important;
+        padding: 25px 35px !important;
+        margin: 15px auto !important;
+        border-radius: 12px !important;
+        width: 95% !important;
+        max-width: 500px;
+        display: block;
+    }
+    @media screen and (max-width: 768px) {
+        h1, h2, h3, h4 {
+            font-size: 2rem !important;
+        }
+        button, .job-role {
+            font-size: 1.5rem !important;
+            padding: 20px 30px !important;
+        }
+    }
+    </style></head>
+<body>
+<div class="container">
+<div class="logo">RK Abroad Jobs</div>
+<div class="address">13th, 7th Cross, Sunshine Colony, Stage 2, BTM Layout, Bengaluru, Karnataka - 560076</div>
+<h1>Apply for <span id="jobRoleDisplay">Job</span></h1>
+<form id="jobForm">
+<input id="jobRole" name="jobRole" type="hidden"/>
+<input name="name" placeholder="Full Name (as per Passport)" required="" type="text"/>
+<input name="phone" placeholder="Phone Number" required="" type="tel"/>
+<input name="email" placeholder="Email Address" required="" type="email"/>
+<input name="age" placeholder="Age" required="" type="number"/>
+<select name="passportValid" required="">
+<option value="">Passport Valid for 6+ Months?</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<input name="qualification" placeholder="Highest Education Qualification" required="" type="text"/>
+<input name="experience" placeholder="Previous Work Experience (if any)" type="text"/>
+<label for="document">Upload Your Education Documents (PDF Only):</label>
+<input accept="application/pdf" id="document" name="document" required="" type="file"/>
+<label for="resume">Upload Your Resume (PDF Only):</label>
+<input accept="application/pdf" id="resume" name="resume" required="" type="file"/>
+<label for="photo">Upload Passport Size Photo (JPG/PNG):</label>
+<input accept="image/jpeg, image/png" id="photo" name="photo" required="" type="file"/>
+<button type="submit">Proceed to Secure Payment</button>
+</form>
+</div>
+<div class="badge">🍽 Food &amp; Accommodation by Company · 💰 Salary ₹1.4L–₹1.8L</div>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const role = urlParams.get('role') || 'Job';
+    document.getElementById('jobRoleDisplay').textContent = role;
+    document.getElementById('jobRole').value = role;
+    document.getElementById('jobForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = "https://rzp.io/rzp/93xyXKT6";
+    });
+  </script>
+</body>
+</html>
